@@ -2,13 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Max width y padding para que el contenido no toque los bordes */
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  /* eliminamos text-align global */
 }
 
+/* Logos (puedes mantenerlos si quieres dejar la demo de Vite/React) */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -37,10 +39,12 @@
   }
 }
 
+/* Card de ejemplo */
 .card {
   padding: 2em;
 }
 
+/* Texto adicional demo */
 .read-the-docs {
   color: #888;
 }
