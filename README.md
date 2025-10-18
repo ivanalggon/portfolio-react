@@ -1,16 +1,47 @@
-# React + Vite
+# 💻 Portfolio Web de Iván
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido a mi portfolio personal. Este sitio web está construido con **React** y **Vite**, y tiene como objetivo mostrar de manera clara y profesional mi perfil como desarrollador web.
 
-Currently, two official plugins are available:
+El portfolio está desplegado en Vercel para que puedas verlo en línea y experimentar de primera mano mi trabajo.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 [Ver portfolio en línea](https://ivanalggon.vercel.app/)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 👨‍💻 Sobre mí
 
-## Expanding the ESLint configuration
+¡Hola! Soy Iván, un desarrollador web apasionado por crear experiencias interactivas y limpias. Me gusta trabajar con tecnologías modernas, aprender constantemente y afrontar retos de programación que me permitan crecer profesionalmente.  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Mi objetivo con este portfolio es mostrar de manera sencilla y efectiva lo que sé hacer, y ofrecer una forma de contacto rápida para posibles oportunidades profesionales.
+
+## 🛠 Tecnologías utilizadas
+
+Durante el desarrollo de este portfolio, he trabajado con:
+
+- [React](https://reactjs.org/) ⚛️
+- [Vite](https://vitejs.dev/) ⚡
+- [TailwindCSS](https://tailwindcss.com/) 🎨
+- JavaScript / TypeScript 📝
+- HTML5 & CSS3 🌐
+
+Estas tecnologías me permiten crear aplicaciones rápidas, responsivas y modernas, con un código limpio y mantenible.
+
+## 💡 Habilidades
+
+Entre las habilidades que busco destacar en mi perfil se encuentran:
+
+- Desarrollo de interfaces web interactivas y responsivas
+- Maquetación moderna con HTML, CSS y TailwindCSS
+- Programación en JavaScript y React
+- Gestión de proyectos y control de versiones con Git
+- Capacidad de aprendizaje rápido y resolución de problemas
+
+## 📧 Contacto
+
+Si quieres hablar conmigo sobre proyectos, colaboraciones o cualquier oportunidad, puedes contactarme a través de:
+
+- [LinkedIn](https://linkedin.com/in/ivanalggon) 🔗  
+- [GitHub](https://github.com/ivanalggon) 🐙  
+- Correo electrónico: ivanalguacil11@gmail.com ✉️  
+
+© 2025 Iván Sebastián Alguacil González. Todos los derechos reservados.
