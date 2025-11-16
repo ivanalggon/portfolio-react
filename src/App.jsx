@@ -1,26 +1,23 @@
 import React from "react";
+import AboutMe from "./components/AboutMe";
 import Header from "./components/Header";
-import About from "./components/About";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
-import "./App.css"; // opcional si vas a usar Tailwind puedes borrarlo
 
 function App() {
   return (
-    <div className="App">
-      {/* Header */}
-      <Header />
+    <div className="app-container">
 
-      {/* Secciones principales */}
-      <main>
-        <About />
+      <Header />
+      <main style={{ backgroundColor: "rgb(5 1 20)" }}>
+        <AboutMe />
         <Skills />
         <Projects />
         <Contact />
-        <Footer />
       </main>
+      <Footer />
     </div>
   );
 }
