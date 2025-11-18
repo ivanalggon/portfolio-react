@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section id="#" className="about-section p-6 " >
       <div className="profileimage">
-        <img src="public/Profile/profile.png" alt="Foto de Perfil" />
+        <img src="/Profile/profile.png" alt="Foto de Perfil" />
       </div>
       <div className="aboutme">
         <div>
