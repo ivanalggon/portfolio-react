@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <section id="#" className="about-section p-6 " style={{display: "flex", }}>
+    <section id="#" className="about-section p-6 " >
       <div className="profileimage">
-        <img src="src\assets\Profile Photo\profile.png" alt="Foto de Perfil" style={{height: "6rem"}}/>
+        <img src="src\assets\Profile\profile.png" alt="Foto de Perfil" />
       </div>
       <div className="aboutme">
         <div>

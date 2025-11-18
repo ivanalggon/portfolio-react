@@ -1,6 +1,3 @@
-/* ------------------------------------ */
-/* Reset y layout full height */
-/* ------------------------------------ */
 html, body, #root {
   height: 100%;
   margin: 0;
@@ -11,20 +8,18 @@ body {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  background-color: #242424; /* fondo oscuro */
-  color: rgba(255,255,255,0.87); /* texto claro */
+  background-color: #242424;
+  color: rgba(255,255,255,0.87);
   display: flex;
   flex-direction: column;
 }
 
-/* Root como contenedor flex column */
-#root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+/* Estilo del título principal */
+#title {
+  color: #a5e2f6;
 }
 
-/* Contenido principal crece */
+/* Contenedor principal de la aplicación */
 .app-container {
   display: flex;
   flex-direction: column;
@@ -50,8 +45,6 @@ header{
   background-color: rgb(9, 9, 9);
   border-top: 2px solid #222;
 }
-
-/* RESPONSIVE */
 @media (max-width: 600px) {
   .footer {
     flex-direction: column;
@@ -62,7 +55,6 @@ header{
   .footer .social-media a {
     margin: 0 0.5rem;
   }
-  
 }
 
 section {
@@ -76,19 +68,18 @@ a {
   margin-right: 1.5rem;
 }
 
+/* Enlaces de navegación */
 .nav-hover {
   padding: 0.2rem;
   color: #a5e2f6;
   transition: 0.4s ease;
 }
-
 .nav-hover {
   padding: 0.2rem;
   color: #a5e2f6;
   transition: 0.4s ease;
   position: relative;
 }
-
 .nav-hover::after {
   content: '';
   position: absolute;
@@ -98,77 +89,62 @@ a {
   left: 0;
   background-color: #a5e2f6;
   transform: scaleX(0);
-  transform-origin: bottom right; /* ← empieza escondida desde la derecha */
+  transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-
 .nav-hover:hover::after {
   transform: scaleX(1);
-  transform-origin: bottom left;  /* ← se expande hacia la derecha */
+  transform-origin: bottom left;
 }
-
 .nav-hover:hover {
   color: white;
   text-shadow: 0 0 8px #a5e2f6;
   transform: scale(1.05);
 }
 
+/*div about-me section*/
 .about-section {
   display: flex;
-  align-items: center;      /* centra verticalmente imagen y texto */
-  gap: 1rem;                /* separación entre imagen y texto */
-  justify-content: center;  /* centra todo el bloque horizontalmente */
-  flex-wrap: wrap;          /* permite que se ajusten si no caben */
+  align-items: center;
+  gap: 4rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeIn 1s ease-in-out;
+}
+/*animacion de entrada*/
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .about-section .profileimage img {
-  height: 5rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .about-section .aboutme {
-  max-width: 600px;         /* ancho máximo del texto */
+  max-width: 500px;
 }
 
 .about-section .aboutme h2,
 .about-section .aboutme p {
   margin: 0;
-  text-align: left;
+  text-align: justify;
 }
 
 /* Responsive */
-@media (max-width: 850px) {
+@media (max-width: 950px) {
+  .about-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
   .about-section .aboutme {
-    flex-direction: column;  /* imagen arriba, texto abajo */
+    flex-direction: column;
     gap: 0.5rem;
+    max-width: 70%;
   }
   .about-section .aboutme h2{
     text-align: center;
-  }
-
-  .about-section .aboutme {
-    max-width: 90%;         /* ocupa todo en móvil */
-  }
-}
-
-#title {
-  color: #a5e2f6;
-}
-
-/* ------------------------------------ */
-/* Light mode (opcional) */
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: #ffffff;
-    color: #213547;
-  }
-  footer {
-    background-color: #f1f1f1;
-    color: #213547;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
   }
 }
