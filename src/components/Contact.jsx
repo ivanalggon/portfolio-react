@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <section id="contact" className="p-5">
+    <section id="contact">
       <h2 className="text-3xl text-center font-bold mb-2" id="title">Contacto</h2>
 
       {/* Button con Currículum para descargar en vez de la imagen
