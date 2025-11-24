@@ -170,6 +170,13 @@ a {
   }
 }
 
+@media (max-width: 500px) {
+  .about-section .aboutme {
+    text-align: left;
+    max-width: 100%;
+  }
+}
+
 /* Inputs con labels flotantes dinámicos */
 .floating-group {
   position: relative;
