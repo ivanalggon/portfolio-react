@@ -4,6 +4,22 @@ html, body, #root {
   padding: 0;
 }
 
+strong {
+  color: #f6f2a5;
+  font-weight: 600;
+  text-shadow: 0 0 8px #fff176;
+  transition: 0.2s ease;
+  font-style: italic;
+  /*estilo de fuente diferente que destaque*/
+
+}
+strong:hover {
+  color: #fff176;
+  transform: scale(2);
+  cursor: pointer;
+  transition: transform 0.2s ease;  
+}
+
 body {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -125,7 +141,7 @@ a {
 }
 
 .about-section .aboutme {
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .about-section .aboutme h2,
@@ -135,15 +151,19 @@ a {
 }
 
 /* Responsive */
-@media (max-width: 950px) {
+@media (max-width: 922px) {
+  
+  #aboutme p{
+    text-align: center;
+  }
   .about-section {
     flex-direction: column;
     gap: 2rem;
   }
   .about-section .aboutme {
     flex-direction: column;
-    gap: 0.5rem;
-    max-width: 70%;
+    
+    max-width: 55%;
   }
   .about-section .aboutme h2{
     text-align: center;
