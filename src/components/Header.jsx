@@ -12,13 +12,16 @@ export default function Header() {
           <div class="collapse navbar-collapse" id="navbarNav" style={{justifyContent: "space-around"}}>
             <ul class="navbar-nav" style={{textAlign: "center"}}>
               <li class="nav-item">
-                <a className="nav-link nav-hover" href="#habilidades">Habilidades</a>
+                <a className="nav-link nav-hover" href="#aboutme">Sobre mí</a>
               </li>
               <li class="nav-item">
-                <a className="nav-link nav-hover" href="#proyectos">Proyectos</a>
+                <a className="nav-link nav-hover" href="#skills">Habilidades</a>
               </li>
               <li class="nav-item">
-                <a className="nav-link nav-hover" href="#contacto">Contacto</a>
+                <a className="nav-link nav-hover" href="#projects">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a className="nav-link nav-hover" href="#contact">Contacto</a>
               </li>
             </ul>
           </div>

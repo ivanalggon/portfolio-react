@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function Contact() {
+export default function AboutMe() {
   return (
-    <section id="#" className="about-section p-6 " >
+    <section id="aboutme" className="about-section p-6 " >
       <div className="profileimage">
         <img src="/Profile/profile.png" alt="Foto de Perfil" />
       </div>

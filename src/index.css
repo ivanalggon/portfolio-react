@@ -34,6 +34,7 @@ main {
 header{
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 .footer {
@@ -130,7 +131,7 @@ a {
 .about-section .aboutme h2,
 .about-section .aboutme p {
   margin: 0;
-  text-align: justify;
+  text-align: left;
 }
 
 /* Responsive */
@@ -146,5 +147,131 @@ a {
   }
   .about-section .aboutme h2{
     text-align: center;
+  }
+}
+
+/* Inputs con labels flotantes dinámicos */
+.floating-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.floating-group label {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  color: #bbb;
+  pointer-events: none;
+  transition: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  background: transparent;
+  padding: 0 4px;
+}
+
+/* Animación cuando el input está en foco */
+.floating-group input:focus + label {
+  top: -10px;
+  left: 10px;
+  font-size: 0.75rem;
+  color: #a5e2f6;
+}
+.floating-group textarea:focus + label {
+  top: -20px;
+  left: 10px;
+  font-size: 0.75rem;
+  color: #a5e2f6;
+}
+
+/* Animación cuando el input tiene contenido */
+.floating-group input:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 0.75rem;
+  color: #a5e2f6;
+}
+.floating-group textarea:not(:placeholder-shown) + label {
+  top: -20px;
+  left: 10px;
+  font-size: 0.75rem;
+  color: #a5e2f6;
+}
+
+/* Ajuste especial para textarea: label más arriba */
+.floating-group textarea + label {
+  top: 10px; /* posición inicial más alta */
+  transform: none;
+}
+
+/* Inputs */
+.custom-input {
+  background-color: #111;
+  border: 1px solid #333;
+  color: white;
+  padding: 0.9rem;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.custom-input:focus {
+  border-color: #a5e2f6;
+  box-shadow: 0 0 10px rgba(165,226,246,0.4);
+  background-color: #0e0e0e;
+  color: white;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #a5e2f6, #9ad4e8);
+  color: #050114;  
+  padding: 0.9rem 1.4rem;
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow suave */
+.submit-btn::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.15), transparent 60%);
+  transform: scale(0);
+  transition: transform 0.4s ease;
+}
+
+/* Hover más elegante */
+.submit-btn:hover {
+  background: linear-gradient(135deg, #86b7c7, #74a8b7);
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* Glow activo */
+.submit-btn:hover::before {
+  transform: scale(1);
+}
+
+/* Animación al hacer clic */
+.submit-btn:active {
+  transform: translateY(0) scale(0.99);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-img {
+    max-width: 55%;
+    margin-bottom: 1rem;
+  }
+
+  .glass-card {
+    padding: 1.5rem !important;
   }
 }
