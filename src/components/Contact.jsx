@@ -28,7 +28,7 @@ export default function Contact() {
         </div>
 
         <div class="col-md-8">
-          <div class="contact-form p-4 rounded">
+          <div class="contact-form rounded">
             <form action="https://formspree.io/f/mrbdegdz" method="POST">
               
               <div className="floating-group">

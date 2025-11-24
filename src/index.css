@@ -28,7 +28,7 @@ body {
 
 main {
   flex: 1;
-  padding: 4rem;
+  padding: 3rem;
 }
 
 header{
@@ -165,7 +165,6 @@ a {
   pointer-events: none;
   transition: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
   background: transparent;
-  padding: 0 4px;
 }
 
 /* Animación cuando el input está en foco */
