@@ -10,8 +10,6 @@ strong {
   text-shadow: 0 0 8px #fff176;
   transition: 0.2s ease;
   font-style: italic;
-  /*estilo de fuente diferente que destaque*/
-
 }
 strong:hover {
   color: #fff176;
