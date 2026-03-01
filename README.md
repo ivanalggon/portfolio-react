@@ -44,4 +44,4 @@ Si quieres hablar conmigo sobre proyectos, colaboraciones o cualquier oportunida
 - [GitHub](https://github.com/ivanalggon) 🐙  
 - Correo electrónico: ivanalguacil11@gmail.com ✉️  
 
-© 2025 Iván Sebastián Alguacil González. Todos los derechos reservados.
+¡Gracias por visitar mi portfolio! Espero que te guste lo que ves y no dudes en contactarme si quieres saber más sobre mí o mis proyectos.
