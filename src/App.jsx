@@ -10,8 +10,21 @@ function App() {
   return (
     <div className="app-container">
 
+      {/* VIDEO DE FONDO */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="background-video"
+      >
+        <source src="/Videos/Gameplay.webm" type="video/webm" />
+      </video>
+
+      {/* Overlay para oscurecer / difuminar */}
+      <div className="video-overlay"></div>
       <Header />
-      <main style={{ backgroundColor: "rgb(5 1 20)" }}>
+      <main>
         <AboutMe />
         <Skills />
         <Projects />
