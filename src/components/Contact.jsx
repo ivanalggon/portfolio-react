@@ -1,6 +1,51 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
+  const form = useRef();
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    // 🔥 HONEYPOT ANTI-SPAM
+    if (form.current.company.value) return;
+
+    // 🔥 VALIDACIÓN EMAIL
+    const email = form.current.email.value;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)) {
+      alert("Introduce un correo electrónico válido.");
+      return;
+    }
+
+    setLoading(true);
+
+    emailjs
+      .sendForm(
+        "service_portfolio",     // service ID
+        "template_portfolio",    // template ID
+        form.current,
+        "Rm3aNLUF9uDm7nEUA"      // public key
+      )
+      .then(
+        () => {
+          setLoading(false);
+          setSuccess(true);
+          form.current.reset();
+
+          setTimeout(() => setSuccess(false), 3000);
+        },
+        (error) => {
+          setLoading(false);
+          alert("Error al enviar el mensaje. Verifica tu correo electrónico e inténtalo de nuevo.");
+          console.log(error);
+        }
+      );
+  };
+
   return (
     <section id="contact">
       <h2 className="text-3xl text-center font-bold mb-2" id="title">
@@ -22,7 +67,14 @@ export default function Contact() {
           {/* Formulario */}
           <div className="col-md-8">
             <div className="contact-form rounded contact-card">
-              <form action="https://formspree.io/f/mrbdegdz" method="POST">
+              <form ref={form} onSubmit={sendEmail}>
+
+                {/* 🔥 HONEYPOT (invisible para humanos) */}
+                <input
+                  type="text"
+                  name="company"
+                  style={{ display: "none" }}
+                />
 
                 <div className="floating-group">
                   <input
@@ -57,8 +109,12 @@ export default function Contact() {
                   <label>Mensaje</label>
                 </div>
 
-                <button type="submit" className="submit-btn w-100">
-                  Enviar
+                <button
+                  type="submit"
+                  className="submit-btn w-100"
+                  disabled={loading}
+                >
+                  {loading ? "Enviando..." : "Enviar"}
                 </button>
 
               </form>
@@ -67,6 +123,15 @@ export default function Contact() {
 
         </div>
       </div>
+
+      {/* 🔥 OVERLAY */}
+      {success && (
+        <div className="overlay-success">
+          <div className="overlay-box">
+            <p>Mensaje enviado correctamente ✅</p>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
