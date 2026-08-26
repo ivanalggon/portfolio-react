@@ -21,7 +21,7 @@ export default function Skills() {
             <img src="/Technologies/React logo.png" alt="Front-end 6" />
             <img src="/Technologies/Angular logo.png" alt="Front-end 8" />
             <img src="/Technologies/Git.png" alt="Front-end 8" />
-            <img src="/Technologies/Github.png" alt="Front-end 8" />
+            <img src="/Technologies/GitHub.png" alt="Front-end 8" />
           </div>
 
           <p>
@@ -36,10 +36,10 @@ export default function Skills() {
           <br />
           <div className="skill-gallery">
             <img src="/Technologies/Csharp_Logo.png" alt="Backend 1" />
-            <img src="/Technologies/MongoDB logo.png" alt="Backend 2" />
+            <img src="/Technologies/mongodb logo.png" alt="Backend 2" />
             <img src="/Technologies/Python logo.png" alt="Backend 3" />
             <img src="/Technologies/Git.png" alt="Backend 4" />
-            <img src="/Technologies/Github.png" alt="Backend 5" />
+            <img src="/Technologies/GitHub.png" alt="Backend 5" />
           </div>
           <br />
           <p>
@@ -56,10 +56,10 @@ export default function Skills() {
             <img src="/Technologies/3ds-max.png" alt="Videojuegos 1" />
             <img src="/Technologies/Blender.png" alt="Videojuegos 1" />
             <img src="/Technologies/substance-painter-logo.png" alt="Videojuegos 1" />
-            <img src="/Technologies/Zbrush Logo.png" alt="Videojuegos 1" />
+            <img src="/Technologies/zbrush logo.png" alt="Videojuegos 1" />
             <img src="/Technologies/Unity-logo.png" alt="Videojuegos 1" />
             <img src="/Technologies/Git.png" alt="Videojuegos 1" />
-            <img src="/Technologies/Github.png" alt="Videojuegos 1" />
+            <img src="/Technologies/GitHub.png" alt="Videojuegos 1" />
           </div>
 
           <p>
