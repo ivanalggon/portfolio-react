@@ -1,0 +1,129 @@
+/* =========================
+   SKILLS
+========================= */
+
+.skills-section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Contenedor de las 3 tarjetas */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto 0;
+}
+
+/* =========================
+   TARJETAS
+========================= */
+
+.skill-card {
+    overflow: hidden;
+    padding: 1.5rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.skill-card h1 {
+    margin: 0 0 1.5rem;
+    color: #a5e2f6;
+    font-size: 1.6rem;
+}
+
+/* =========================
+   GALERÍA
+========================= */
+
+.skill-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+    justify-items: center;
+}
+
+/* Imágenes */
+.skill-gallery img {
+    width: 100%;
+    max-width: 200px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+
+    /* Animación */
+    transition: transform 0.3s ease,
+                filter 0.3s ease,
+                box-shadow 0.3s ease;
+
+    cursor: pointer;
+}
+
+/* Hover */
+.skill-gallery img:hover {
+    transform: scale(1.12);
+    filter: brightness(1.15);
+    box-shadow: 0 0 20px rgba(165, 226, 246, 0.5);
+}
+
+/* =========================
+   DESCRIPCIÓN
+========================= */
+
+.skill-card p {
+    margin: 1.5rem 0 0;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+/* =========================
+   RESPONSIVE - TABLET
+========================= */
+
+@media (max-width: 922px) {
+
+    .skills-container {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+
+}
+
+
+/* =========================
+   RESPONSIVE - MÓVIL
+========================= */
+
+@media (max-width: 600px) {
+
+    .skills-section {
+        padding: 1rem 0;
+    }
+
+    .skills-container {
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .skill-card {
+        padding: 1rem;
+    }
+
+    .skill-card h1 {
+        font-size: 1.4rem;
+    }
+
+    .skill-gallery {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0.4rem;
+    }
+
+    .skill-gallery img {
+        max-width: 200px;
+    }
+
+}
