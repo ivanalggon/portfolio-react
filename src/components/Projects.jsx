@@ -39,7 +39,7 @@ export default function Projects() {
                 style={{borderRadius: "0.5rem"}}/>
           </div>
           <div className="col-md-8">
-            <h3 className="text-2xl font-bold mb-2" >Supermarket Simulator</h3>
+            <h3 className="text-2xl font-bold mb-2" >💰Supermarket Simulator 🛒</h3>
             <p>Juego de Simulación de un supermercado en Unreal Engine </p>
             <div className="d-flex flex-wrap justify-content-center gap-3 mt-3">
               <img src="/Technologies/Unity-logo.png" alt="Unity" className="img-fluid" style={{width: "50px", height: "50px"}}/>
@@ -64,7 +64,7 @@ export default function Projects() {
           </div>
           <div className="col-md-8">
             <h3 className="text-2xl font-bold mb-2" >Viewing Party Valorant</h3>
-            <p>Aplicación web para ver torneos y comenzar a competir profesionalmente</p>
+            <p>Web donde puedes comprar merchandising oficial, ver torneos y comenzar a competir profesionalmente</p>
             <div className="d-flex flex-wrap justify-content-center gap-3 mt-3">
               <img src="/Technologies/Unity-logo.png" alt="Unity" className="img-fluid" style={{width: "50px", height: "50px"}}/>
               <img src="/Technologies/Csharp_Logo.png" alt="C#" className="img-fluid" style={{width: "50px", height: "50px"}}/>

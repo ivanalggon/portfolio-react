@@ -33,11 +33,12 @@ export default function Skills() {
         {/* DISEÑO WEB */}
         <div className="skill-card">
           <h1>Back-end</h1>
-          <br />
           <div className="skill-gallery">
             <img src="/Technologies/Csharp_Logo.png" alt="Backend 1" />
-            <img src="/Technologies/mongodb logo.png" alt="Backend 2" />
             <img src="/Technologies/Python logo.png" alt="Backend 3" />
+            <img src="/Technologies/Java logo.png" alt="Backend 3" />
+            <img src="/Technologies/Mysql logo.png" alt="Backend 3" />
+            <img src="/Technologies/mongodb logo.png" alt="Backend 2" />
             <img src="/Technologies/Git.png" alt="Backend 4" />
             <img src="/Technologies/GitHub.png" alt="Backend 5" />
           </div>
@@ -58,6 +59,7 @@ export default function Skills() {
             <img src="/Technologies/substance-painter-logo.png" alt="Videojuegos 1" />
             <img src="/Technologies/zbrush logo.png" alt="Videojuegos 1" />
             <img src="/Technologies/Unity-logo.png" alt="Videojuegos 1" />
+            <img src="/Technologies/Unreal engine logo.png" alt="Videojuegos 1" />
             <img src="/Technologies/Git.png" alt="Videojuegos 1" />
             <img src="/Technologies/GitHub.png" alt="Videojuegos 1" />
           </div>

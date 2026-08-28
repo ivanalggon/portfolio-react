@@ -4,7 +4,7 @@ export default function AboutMe() {
   return (
     <section id="aboutme" className="about-section " >
       <div className="profileimage">
-        <img src="/Profile/profile3.jpg" alt="Foto de Perfil" />
+        <img src="./Profile/profile3.jpg" alt="Foto de Perfil" />
       </div>
       <div className="aboutme">
         <div>
