@@ -93,9 +93,15 @@ a {
 /* NAV */
 .nav-hover {
   padding: 0.2rem;
-  color: #a5e2f6;
+  color: #a5e2f6 !important;
   position: relative;
   transition: 0.3s;
+}
+
+.nav-hover:hover {
+  color: white !important;
+  text-shadow: 0 0 8px #a5e2f6;
+  transform: scale(1.05);
 }
 
 .nav-hover::after {
@@ -116,12 +122,6 @@ a {
   transform-origin: left;
 }
 
-.nav-hover:hover {
-  color: white;
-  text-shadow: 0 0 8px #a5e2f6;
-  transform: scale(1.05);
-}
-
 /* TITLE */
 #title {
   color: #a5e2f6;
@@ -138,8 +138,13 @@ a {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .profileimage img {
@@ -160,22 +165,29 @@ a {
 .contact-img {
   max-width: 250px;
   border-radius: 50%;
-  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.6));
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.6));
   animation: float 2.5s ease-in-out infinite;
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .contact-card {
   padding: 30px;
   border-radius: 20px;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255,255,255,0.1);
-  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
 /* FLOATING INPUTS */
@@ -190,7 +202,7 @@ a {
   padding: 0.9rem;
   border-radius: 10px;
   border: 1px solid #333;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   transition: all 0.25s ease;
 }
@@ -198,9 +210,9 @@ a {
 .floating-group input:focus,
 .floating-group textarea:focus {
   border-color: #a5e2f6;
-  box-shadow: 0 0 10px rgba(165,226,246,0.4);
-  background-color: rgba(255,255,255,0.08);
-  color : #ffffff;
+  box-shadow: 0 0 10px rgba(165, 226, 246, 0.4);
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
 }
 
 .floating-group label {
@@ -213,22 +225,22 @@ a {
   pointer-events: none;
 }
 
-.floating-group textarea + label {
+.floating-group textarea+label {
   top: 10px;
   transform: none;
 }
 
 /* LABEL ANIMATION */
-.floating-group input:focus + label,
-.floating-group input:not(:placeholder-shown) + label {
+.floating-group input:focus+label,
+.floating-group input:not(:placeholder-shown)+label {
   top: -10px;
   left: 10px;
   font-size: 0.75rem;
   color: #a5e2f6;
 }
 
-.floating-group textarea:focus + label,
-.floating-group textarea:not(:placeholder-shown) + label {
+.floating-group textarea:focus+label,
+.floating-group textarea:not(:placeholder-shown)+label {
   top: -20px;
   left: 10px;
   font-size: 0.75rem;
@@ -254,7 +266,7 @@ a {
 
 .submit-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
 /* STRONG */
@@ -290,7 +302,7 @@ strong:hover {
   border-radius: 12px;
   font-size: 1.2rem;
   text-align: center;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   animation: fadeIn 0.3s ease;
 }
 
@@ -299,6 +311,7 @@ strong:hover {
     opacity: 0;
     transform: scale(0.9);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -313,15 +326,16 @@ strong:hover {
 }
 
 @media (max-width: 922px) {
-  
+
   .about-section {
     flex-direction: column;
     gap: 2rem;
   }
 
-  .aboutme h2{
+  .aboutme h2 {
     text-align: center;
   }
+
   .aboutme {
     max-width: 80%;
     text-align: center;

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutMe() {
   return (
-    <section id="aboutme" className="about-section " >
+    <section id="aboutme" className="about-section" >
       <div className="profileimage">
         <img src="./Profile/profile3.jpg" alt="Foto de Perfil" />
       </div>
